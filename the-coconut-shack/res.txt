@@ -1,0 +1,389 @@
+LUCIDE ICONS TO USE
+menu
+x
+map-pin
+clock-3
+phone
+chef-hat
+star
+utensils-crossed
+camera
+waves
+sun
+palm-tree
+
+You can style ALL icons using CSS normally.
+i {
+  font-size: 1.2rem;
+  color: white;
+}
+.fa-instagram {
+  color: #fff;
+}
+
+[data-lucide] {
+  width: 24px;
+  height: 24px;
+  stroke-width: 2;
+}
+
+The Coconut Shack Website
+
+================================================
+VISION
+A modern tropical luxury landing page
+
+INSPIRATION/BLUEPRINT
+Cuz's Fish Shack
+https://restaurantsnapshot.com/cuzsfishshack/
+
+The Catch
+https://thecatchbarbados.com/
+
+
+
+VIBE
+coconut/beach
+smooth scrolling
+modern/tropical typography
+immersive imagery (food/events/activities)
+subtle animations
+tropical palette
+mobile-first design
+
+AESTHETIC
+Tropical Modern
+beach shack
+relaxed atmosphere
+Caribbean luxury
+
+GOLDEN HOUR CARIBBEAN
+warm sunlight
+coconut drinks
+beach breeze
+reggae/calypso energy
+Barbados coastlines
+tourists + locals
+relaxed tropical atmosphere
+
+COLOR PALETTE
+:root {
+  --sand: #F6E7CB;
+  --coconut: #FFF9F1;
+  --sunset: #F4A261;
+  --palm: #2F5D50;
+  --ocean: #3A7D7C;
+  --coral: #E76F51;
+  --dark: #1E1E1E;
+}
+================================================
+WEBSITE STRUCTURE (1ST BLUEPRINT)
+
+Hero Section
+Fullscreen background image/video.
+Text: "lorem ipsum"
+Buttons: View Menu, Visit Us
+To Include: floating palm/coconut accents, smooth scroll arrow, animated navbar.
+
+2. About Section
+Short story: local vibe, fresh ingredients, beachside experience.
+Layout: split image/text section.
+
+3. Signature Items
+Grid cards: coconut drinks, seafood, tropical bowls, smoothies, specials.
+Hover animations.
+
+4. Gallery
+Instagram-style masonry grid.
+
+5. Testimonials
+Simple cards: tourist reviews, local reviews, Google-style rating section.
+
+6. Location + Hours
+Embedded map.
+Contact buttons.
+Instagram CTA.
+
+7. Footer
+Socials.
+Branding.
+Copyright.
+================================================
+TECH FEATURES (1ST BLUEPRINT)
+
+Phase 1
+responsive design
+sticky navbar
+smooth scrolling
+hover effects
+modern layout
+
+2. Phase 2
+scroll animations
+parallax sections
+animated menu cards
+loading animations
+
+3. Phase 3
+menu filtering
+reservation/contact form
+dark/light mode toggle maybe 
+================================================
+FOLDER STRUCTURE (1ST BLUEPRINT)
+the-coconut-shack/
+│
+├── index.html
+├── style.css
+├── script.js
+│
+├── assets/
+│   ├── images/
+│   └── videos/
+│
+└── README.md
+================================================
+WEBSITE STRUCTURE (FINAL BLUEPRINT)
+SECTION 1 — HERO
+Fullscreen
+Large tropical food/beach image
+Overlay gradient for readability
+Headline: Fresh Coconut. Real Bajan Flavor. Real Rum.
+Subtext: Beachside bites, tropical drinks, and authentic island vibes in Barbados.
+Buttons: View Menu, Find Us
+
+Extra Features:
+subtle moving palm leaves
+floating sunlight glow
+smooth scroll indicator
+
+SECTION 2 — “The Shack Experience”
+Inspired by The Catch layout.
+
+Split section:
+left = image collage
+right = text
+
+Talk about:
+freshness
+local ingredients
+Barbados culture
+beach atmosphere
+
+SECTION 3 — Signature Favorites
+THIS is where we impress visually.
+
+Grid cards with:
+food image
+item name
+short description
+
+Examples:
+Coconut Shrimp
+Fish Cutter
+Tropical Smoothies
+Coconut Water
+Flying Fish Bowl
+
+Hover effects:
+image zoom
+glow
+slight card lift
+
+SECTION 4 — Island Gallery
+This section will carry HARD visually.
+
+Pinterest/Instagram-style layout.
+
+Use:
+beach shots
+food closeups
+coconuts
+sunset photos
+happy customers
+
+SECTION 5 — Visit Us
+Important for real business value.
+
+Include:
+opening hours (10AM–6PM)
+location
+map
+Instagram link
+call button
+
+Could add:
+“Perfect before sunset.”
+
+SECTION 6 — Footer
+Simple
+Clean
+Tropical
+
+TYPOGRAPHY (IMPORTANT)
+Headings: Poppins OR Bebas Neue
+Body: Open Sans OR Inter
+
+
+ANIMATIONS TO ADD
+Simple things:
+fade-in on scroll
+smooth scrolling
+hover transitions
+navbar background change on scroll
+image zoom hover
+
+
+ABOUT SECTION REPLACED WITH EXPERIENCE SECTION
+<section class="about">
+
+        <div class="about-container">
+
+            <!-- IMAGE SIDE -->
+
+            <div class="about-images">
+
+                <img src="assets/images/advert.jpg" alt="Tropical food" class="main-img">
+
+                <img src="assets/images/clustomer.jpg" alt="Beach vibes" class="accent-img">
+
+            </div>
+
+            <!-- TEXT SIDE -->
+
+            <div class="about-content">
+
+                <p class="section-tag">
+                    Island Vibes
+                </p>
+
+                <h2>
+                    More Than Food.<br>
+                    It’s Barbados Energy.
+                </h2>
+
+                <p class="about-text">
+                    At The Coconut Shack, every dish is made with fresh island
+                    ingredients, Caribbean flavor, and the relaxed spirit of Barbados.
+                    Whether you're stopping by after the beach or catching the sunset
+                    with friends, every visit feels like a tropical escape.
+                </p>
+
+                <div class="about-features">
+
+                    <div class="feature">
+
+                        <i data-lucide="waves"></i>
+
+                        <span>Beachside Atmosphere</span>
+
+                    </div>
+
+                    <div class="feature">
+
+                        <i data-lucide="sun"></i>
+
+                        <span>Fresh Daily Ingredients</span>
+
+                    </div>
+
+                    <div class="feature">
+
+                        <i data-lucide="utensils-crossed"></i>
+
+                        <span>Authentic Bajan Flavor</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    /* ABOUT SECTION */
+
+.about {
+    padding: 7rem 5%;
+    background: #fff9f1;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    align-items: center;
+    max-width: 1300px;
+    margin: auto;
+}
+
+/* IMAGES */
+
+.about-images {
+    position: relative;
+}
+
+.main-img {
+    width: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.accent-img {
+    position: absolute;
+    width: 220px;
+    bottom: -40px;
+    right: -30px;
+    border-radius: 20px;
+    border: 6px solid #fff9f1;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* CONTENT */
+
+.section-tag {
+    color: #f4a261;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.about-content h2 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: #1e1e1e;
+}
+
+.about-text {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+/* FEATURES */
+
+.about-features {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 500;
+    color: #1e1e1e;
+}
+
+.feature i {
+    color: #f4a261;
+    width: 24px;
+    height: 24px;
+}

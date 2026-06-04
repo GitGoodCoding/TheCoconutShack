@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Coconut Shack</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <h1>The Coconut Shack</h1>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#visit">Visit</a></li>
+            </ul>
+
+            <div class="nav-icons">
+                <a href="https://www.instagram.com/thecoconutshackbds/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://maps.app.goo.gl/aMvgTYFEpbABLDNt5" target="_blank">
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+
+                <button class="menu-btn">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+
+        </nav>
+    </header>
+
+    <section class="hero" id="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <p class="hero-subtitle">
+                Sundays Only • Six Men’s, St. Peter • Barbados
+            </p>
+
+            <h1>
+                The Coconut Shack
+            </h1>
+
+            <p class="hero-text">
+                Home of the famous Coconut Rum Punch. Join us every Sunday at Six Men's Beach for great drinks, tasty sandwiches, island music, and unforgettable vibes.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#menu" class="btn primary-btn">
+                    View Menu
+                </a>
+
+                <a href="https://www.instagram.com/thecoconutshackbds/" target="_blank" class="btn secondary-btn">
+                    Visit Us
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="scroll-indicator">
+            <i data-lucide="chevron-down"></i>
+        </div>
+
+    </section>
+
+    <section class="experience" id="experience">
+
+        <div class="experience-container">
+
+            <div class="experience-text">
+
+                <p class="section-tag">Sunday Ritual</p>
+
+                <h2>
+                    Six Men’s Beach<br>
+                    Every Sunday 10AM–5:30PM
+                </h2>
+
+                <p>
+                    The Coconut Shack is a weekly island escape.
+                    Known for the best coconut rum punch in Barbados,
+                    it’s where locals and visitors come together for a relaxed beach vibe.
+                </p>
+
+                <ul class="experience-list">
+
+                    <li>🥥 Fresh cracked coconuts</li>
+                    <li>🍹 Signature rum punch</li>
+                    <li>🎶 Relaxed island music</li>
+                    <li>🌊 Beachfront vibes at Six Men’s, St. Peter</li>
+
+                </ul>
+
+            </div>
+
+            <div class="experience-image">
+
+                <img src="assets/images/advert.jpg" alt="Beach vibe">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="menu" id="menu">
+        <p class="section-tag">What We Serve</p>
+        <h2>Island Favorites</h2>
+
+        <div class="menu-grid">
+
+            <!-- Sandwiches Category -->
+            <div class="category-header" style="grid-column: 1 / -1; text-align: center; padding: 2rem 0;">
+                <p class="section-tag">🥪 Sandwiches</p>
+            </div>
+
+            <!-- Tuna Sandwich -->
+            <div class="drink-card">
+                <div class="drink-icon">🐟</div>
+
+                <div class="drink-top">
+                    <h3>Tuna Sandwich</h3>
+                    <span class="price">$17</span>
+                </div>
+
+                <p>Freshly prepared and served on Sundays.</p>
+            </div>
+
+            <!-- Chicken Sandwich -->
+            <div class="drink-card">
+                <div class="drink-icon">🍗</div>
+
+                <div class="drink-top">
+                    <h3>Chicken Sandwich</h3>
+                    <span class="price">$17</span>
+                </div>
+
+                <p>A Coconut Shack favorite.</p>
+            </div>
+
+            <!-- Club Sandwich -->
+            <div class="drink-card">
+                <div class="drink-icon">🥪</div>
+
+                <div class="drink-top">
+                    <h3>Club Sandwich</h3>
+                    <span class="price">$18</span>
+                </div>
+
+                <p>Loaded with flavor and perfect for the beach.</p>
+            </div>
+
+            <!-- Drinks Category -->
+            <div class="category-header" style="grid-column: 1 / -1; text-align: center; padding: 2rem 0;">
+                <p class="section-tag">🍹 Drinks</p>
+            </div>
+
+            <!-- Coconut Rum Punch -->
+            <div class="drink-card featured">
+                <div class="drink-icon">🥥🍹</div>
+
+                <div class="drink-top">
+                    <h3>Coconut Rum Punch</h3>
+                    <span class="price">$15</span>
+                </div>
+
+                <p>
+                    Fresh cracked coconut water mixed with island rum and tropical fruit.
+                    The drink that built The Coconut Shack.
+                </p>
+
+                <span class="badge">Signature</span>
+            </div>
+
+            <!-- Mango Rum Punch -->
+            <div class="drink-card">
+                <div class="drink-icon">🥭</div>
+
+                <div class="drink-top">
+                    <h3>Mango Rum Punch</h3>
+                    <span class="price">$15</span>
+                </div>
+
+                <p>Tropical mango blended with premium island rum.</p>
+            </div>
+
+            <!-- Original Rum Punch -->
+            <div class="drink-card">
+                <div class="drink-icon">🍹</div>
+
+                <div class="drink-top">
+                    <h3>Original Rum Punch</h3>
+                    <span class="price">$12</span>
+                </div>
+
+                <p>A classic island blend with a smooth finish.</p>
+            </div>
+
+            <!-- Non-Alcoholic Drinks Category -->
+            <div class="category-header" style="grid-column: 1 / -1; text-align: center; padding: 2rem 0;">
+                <p class="section-tag" style="background: rgba(58, 125, 124, 0.12);">Beverages</p>
+            </div>
+
+            <!-- Lemonade -->
+            <div class="drink-card">
+                <div class="drink-icon">🍋</div>
+
+                <div class="drink-top">
+                    <h3>Lemonade</h3>
+                    <span class="price">$10</span>
+                </div>
+
+                <p>Fresh and refreshing island lemonade.</p>
+            </div>
+
+            <!-- Sprite -->
+            <div class="drink-card">
+                <div class="drink-icon">🥤</div>
+
+                <div class="drink-top">
+                    <h3>Sprite</h3>
+                    <span class="price">$4</span>
+                </div>
+
+                <p>Ice cold soft drink.</p>
+            </div>
+
+            <!-- Coke -->
+            <div class="drink-card">
+                <div class="drink-icon">🥤</div>
+
+                <div class="drink-top">
+                    <h3>Coke</h3>
+                    <span class="price">$4</span>
+                </div>
+
+                <p>Ice cold soft drink.</p>
+            </div>
+
+            <!-- Banks -->
+            <div class="drink-card">
+                <div class="drink-icon">🍺</div>
+
+                <div class="drink-top">
+                    <h3>Banks</h3>
+                    <span class="price">$6</span>
+                </div>
+
+                <p>Local island beer.</p>
+            </div>
+
+            <!-- Deputy -->
+            <div class="drink-card">
+                <div class="drink-icon">🍺</div>
+
+                <div class="drink-top">
+                    <h3>Deputy</h3>
+                    <span class="price">$5</span>
+                </div>
+
+                <p>Island beer selection.</p>
+            </div>
+
+            <!-- Water -->
+            <div class="drink-card">
+                <div class="drink-icon">💧</div>
+
+                <div class="drink-top">
+                    <h3>Water</h3>
+                    <span class="price">$3</span>
+                </div>
+
+                <p>Pure refreshing water.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="special-banner">
+        <h2>⭐ Ask About Our Bucket Deals</h2>
+        <p>Planning a beach lime with friends?<br>Ask us about our bucket specials available on Sundays.</p>
+    </section>
+
+    <section class="vibe" id="vibe">
+        <h2>
+            “Just a relaxed vibe 🫨🥥”
+        </h2>
+        <p>
+            Good food. Good drinks. Better energy.
+        </p>
+    </section>
+
+    <section class="visit" id="visit">
+        <h2>Visit Us</h2>
+        <h3>Find Us At Six Men's Beach</h3>
+        <p>Every Sunday from 10:00 AM to 5:30 PM.</p>
+        <p style="font-weight: 600; margin-top: 1rem;">Six Men's, St. Peter, Barbados</p>
+        <a href="https://maps.app.goo.gl/aMvgTYFEpbABLDNt5" target="_blank" class="cta-btn" style="margin-top: 2rem;">Open in Google Maps</a>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <p class="section-tag">Visual Stories</p>
+        <h2>See The Vibes</h2>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="assets/images/customerstaff.jpg" alt="Beach vibes at Six Men's">
+                <div class="gallery-overlay">
+                    <span class="gallery-label">🌊 Beach Vibes</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <video autoplay muted loop style="width: 100%; height: 100%; object-fit: cover;">
+                    <source src="assets/videos/livepan.mp4" type="video/mp4">
+                </video>
+                <div class="gallery-overlay">
+                    <span class="gallery-label">🎬 Island Energy</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images/Sunset.jpeg" alt="Sunset at the Shack">
+                <div class="gallery-overlay">
+                    <span class="gallery-label">🌅 Golden Hour</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images/productdominoes.jpg" alt="Drinks served">
+                <div class="gallery-overlay">
+                    <span class="gallery-label">🍹 Signature Drinks</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images/clustomer.jpg" alt="Crowd enjoying the music">
+                <div class="gallery-overlay">
+                    <span class="gallery-label">🎶 Great Vibes</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images/BreadnTwo.jpeg" alt="Food and drinks">
+                <div class="gallery-overlay">
+                    <span class="gallery-label">🥪 Good Eats</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="instagram-feed" id="instagram">
+        <p class="section-tag">Follow The Vibes</p>
+        <h2>From Our Instagram</h2>
+        <p class="ig-handle">@thecoconutshackbds</p>
+
+        <div class="ig-carousel-container">
+            <div class="ig-carousel">
+                <div class="ig-post active" id="ig-post-1">
+                    <div class="ig-image">
+                        <img src="assets/images/advert.jpg" alt="Instagram Post 1">
+                    </div>
+                    <div class="ig-content">
+                        <p class="ig-caption">🥥🍹 Nothing beats an ice-cold Coconut Rum Punch at Six Men's Beach on a Sunday afternoon. This is island living at its finest.</p>
+                        <div class="ig-stats">
+                            <span>❤️ 234 likes</span>
+                            <span>💬 42 comments</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ig-post" id="ig-post-2">
+                    <div class="ig-image">
+                        <img src="assets/images/advert.jpg" alt="Instagram Post 2">
+                    </div>
+                    <div class="ig-content">
+                        <p class="ig-caption">The crew is ready for Sunday! Fresh sandwiches, cold drinks, and the best company. See you at Six Men's from 10AM-5:30PM 🏖️</p>
+                        <div class="ig-stats">
+                            <span>❤️ 189 likes</span>
+                            <span>💬 31 comments</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ig-post" id="ig-post-3">
+                    <div class="ig-image">
+                        <img src="assets/images/advert.jpg" alt="Instagram Post 3">
+                    </div>
+                    <div class="ig-content">
+                        <p class="ig-caption">Sunset vibes are hitting different this season 🌅 Join us every Sunday for unforgettable island energy, great music, and pure vibes.</p>
+                        <div class="ig-stats">
+                            <span>❤️ 312 likes</span>
+                            <span>💬 58 comments</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ig-nav">
+                <button class="ig-prev" onclick="instagramCarousel('prev')">❮</button>
+                <div class="ig-dots">
+                    <span class="ig-dot active" onclick="goToInstagramPost(1)"></span>
+                    <span class="ig-dot" onclick="goToInstagramPost(2)"></span>
+                    <span class="ig-dot" onclick="goToInstagramPost(3)"></span>
+                </div>
+                <button class="ig-next" onclick="instagramCarousel('next')">❯</button>
+            </div>
+
+            <a href="https://www.instagram.com/thecoconutshackbds/" target="_blank" class="cta-btn" style="margin-top: 2rem;">Follow on Instagram</a>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <p class="section-tag">What People Say</p>
+        <h2>Guest Reviews</h2>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">
+                    "Best coconut rum punch I’ve ever had!"
+                </p>
+                <p class="testimonial-author">— Kesha G.</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">
+                    "Best fishcakes I’ve had in a long time!"
+                </p>
+                <p class="testimonial-author">— Laurence H.</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">
+                    "Brought my whole crew, and everyone left with a smile. The Coconut Shack knows how to make Sundays special. Already planning our return!"
+                </p>
+                <p class="testimonial-author">— The Beach Squad</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">
+                    "The tuna sandwich was incredible, and don't even get me started on the punch. If you want authentic island vibes, this is the place to be."
+                </p>
+                <p class="testimonial-author">— Marcus T.</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">
+                    "A perfect Sunday experience from start to finish. Great company, amazing drinks, and the beach breeze? Chef's kiss. Pure island paradise."
+                </p>
+                <p class="testimonial-author">— Rachel & Co.</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">
+                    "Finally found a place that delivers on the promise of Caribbean hospitality. The Coconut Shack is the real deal. Worth the visit!"
+                </p>
+                <p class="testimonial-author">— Tourist Reviewer</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <p class="section-tag">Get In Touch</p>
+        <h2>Contact Us</h2>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div>
+                        <h3>Location</h3>
+                        <p>Six Men's, St. Peter<br>Barbados</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <div>
+                        <h3>Phone</h3>
+                        <p><a href="tel:+1-246-555-0123">+1 (246) 267-8345</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">✉️</div>
+                    <div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@thecoconutshack.com">info@thecoconutshack.com</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">🕐</div>
+                    <div>
+                        <h3>Hours</h3>
+                        <p>Sundays Only<br>10:00 AM - 5:30 PM</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div>
+                        <h3>Follow Us</h3>
+                        <p>
+                            <a href="https://www.instagram.com/thecoconutshackbds/" target="_blank">Instagram</a> •
+                            <a href="https://maps.app.goo.gl/aMvgTYFEpbABLDNt5" target="_blank">Map</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-cta">
+                <p>Have questions or special requests?</p>
+                <a href="https://www.instagram.com/thecoconutshackbds/" target="_blank" class="cta-btn">Message Us</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta" id="cta">
+        <h2>See You Sunday 🌴</h2>
+        <p>
+            Six Men’s, St. Peter • 10AM – 5:30PM
+            Good drinks, good music, better energy.
+        </p>
+
+        <a href="#top" class="cta-btn">Plan Your Visit</a>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
