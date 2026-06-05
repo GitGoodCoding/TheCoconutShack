@@ -122,3 +122,19 @@ window.addEventListener('DOMContentLoaded', () => {
     startInstagramAutoPlay();
 });
 
+// Mobile navigation toggle
+const menuBtn = document.querySelector('.menu-btn');
+if (menuBtn) {
+    menuBtn.addEventListener('click', () => {
+        document.body.classList.toggle('nav-open');
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.body.classList.remove('nav-open');
+        });
+    });
+}
+
+
+
